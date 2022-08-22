@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Inconsolata", sans-serif;
+    line-height: 1.15; /* 1 */
+
+}
+
+.pd-8-16 {
+    padding: 8px 16px;
+}
+.mr8-0 {
+    margin: 8px 0;
+}
+#main {
+    width: 100%;
+    height: 100vh;
+}
+#header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 1;
+}
+.header_list {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black-color);
+    align-items: center;
+    
+}
+.header_list_item {
+    height: 60px;
+    flex: 1;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white-color);
+    
+}
+.header_list_item a{
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 3rem;
+    color: var(--white-color);
+   margin-top: 6px;
+}
+
+.header_list_item:hover  a {
+    color: var(--black-color);
+    background-color: #ccc;
+}
+
+/* Slider  */
+
+
+#slider{
+    
+    padding-top: 50%;/* là 50% tỉ lệ theo chiều ngang của chính nó*/
+    background: url('/asset/img/anh_files/coffeeshop.jpg') top center / cover no-repeat;
+    position: relative;
+    z-index: -1;
+}
+.slider-description {
+    
+}
+.slider-description__name {
+    position: absolute;
+    left: 50%;
+    bottom: 560px;
+    font-size: 60px;
+    transform: translateX(-50%);
+    color: var(--white-color);
+    font-weight: 500;
+}
+.slider-description__address {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.slider-description__addess-left {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    display: block;
+    margin: 16px 24px;
+    padding: 8px;
+    letter-spacing: 2px; 
+    /* tao khoanr cach giua cac chu */
+}
+.slider-description__addess-right {
+    margin: 16px 24px;
+    padding: 8px;
+    color: var(--white-color);
+    letter-spacing: 2px;
+}
+
+
+/* container */
+
+#container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-about {
+    width: 100%;
+}
+.container-about-heading {
+    display: flex;
+    justify-content: center;
+}
+.container-about-heading h3 {
+    width: 200px;
+    text-align: center;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    margin: 64px 0;
+    font-weight: 300;
+
+    padding: 4px;
+}
+.container-about-body {
+    width: 100%;
+}
+.container-about-body-heading {
+    font-size: 16px;
+    line-height: 1.6rem;
+    font-weight: 300;
+    margin: 16px 0;
+}
+.container-about-body-heading p {
+    margin: 8px 0;
+}
+.container-about-body-content {
+    font-size: 16px;
+    line-height: 1.4rem;
+    letter-spacing: 4px;
+    font-weight: 300;
+    padding: 10px  16px;
+    border-left: 6px solid #ccc;
+}
+.container-about-body-content p {
+    font-style: italic;
+    padding: 10px 0;
+}
+.container-about-body-img img{
+    width: 100%;
+    margin: 24px 0;
+}
+.container-about-footer {
+    
+}
+.container-about-footer p {
+    color: var(--black-color);
+    margin-bottom: 16px ;
+    font-size: 18px;
+}
+.container-about-footer span {
+    font-weight: 100;
+}
+
